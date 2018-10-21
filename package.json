@@ -1,0 +1,32 @@
+{
+  "name": "penexpress",
+  "version": "0.0.1",
+  "description": "Anonymous blogging system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test available\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WicopeeDot/PenExpress.git"
+  },
+  "author": "WicopeeDot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WicopeeDot/PenExpress/issues"
+  },
+  "homepage": "https://github.com/WicopeeDot/PenExpress#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.3.4",
+    "request": "^2.88.0",
+    "socket.io": "^2.1.1",
+    "then-request": "^6.0.0",
+    "typed.js": "^2.0.9"
+  }
+}

@@ -1,0 +1,69 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+.indexPageContainer {
+	text-align: center;
+	margin: 32px auto;
+	max-width: 32rem;
+}
+
+.indexPageContainer h1 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 250%;
+	text-align: center;
+}
+
+.appear {
+	-webkit-animation: 1.5s appear ease-in-out;
+	animation: 1.5s appear ease-in-out;
+}
+
+@-webkit-keyframes appear {
+	0% {
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes appear {
+	0% {
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+.everyInput {
+	font-family: 'Roboto Mono', monospace;
+	margin: 16px 0;
+	font-size: 70%;
+	resize: none;
+	padding: 16px;
+	border-radius: 8px;
+	border: 1px dashed #000;
+	max-width: 75%;
+}
+
+.typed-cursor {
+	display: none;
+}
+
+#appearaftertype {
+	opacity: 0;
+}
