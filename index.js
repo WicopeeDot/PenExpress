@@ -29,7 +29,7 @@ app.post('/subm', async (req, res) => {
 	}
 
 	request.post('https://www.google.com/recaptcha/api/siteverify', {form: options}, function(_,__,resp) {
-		console.log(resp)
+		resp = JSON.parse(resp)
 		if(!resp.success) 
 			return res.status(400).send({success:false,msg:'captcha not correct'})
 
