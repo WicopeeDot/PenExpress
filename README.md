@@ -1,4 +1,4 @@
-# PenExpress
+# PenExpress (WIP)
 PenExpress - anonymous blogging engine.
 All pages are private and can be accessed via links.
 
