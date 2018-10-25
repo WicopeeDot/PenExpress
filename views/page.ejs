@@ -12,23 +12,17 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-	<div class="indexPageContainer">
-		<h1 id="typed-index"></h1>
-		<div id="appearaftertype">
-			<span>Everything you will submit will be private and can be only accessed by link.</span>
-			
-			<form action="/subm" method="POST">
-				<textarea name="text" class="appear everyInput" rows="16" cols="64" placeholder="Lorem ipsum, blah blah blah...." required></textarea>
-				<input name="pswd" type="password" placeholder="Password (for edit)" class="everyInput" required>
-				<input type="submit" class="everyInput">
-				<div class="g-recaptcha" data-sitekey=<%= captcha %>></div>
-			</form>
-		</div>
+	<div class="pageContainer">
+		<div class="pageContent">
+<%= text %>
+		</div><br><br>
+		<a class="everyInput" href="/pedit/<%= id %>">Edit document</a>
 	</div>
 
 	<script src="/jquery/dist/jquery.min.js"></script>
 	<script src="/typed.js/lib/typed.min.js"></script>
 	<script src="/socket.io-client/dist/socket.io.slim.js"></script>
+	<script src="/markdown/lib/markdown.js"></script>
 	<script src="/index.js"></script>
 </body>
 </html>

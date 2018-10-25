@@ -13,17 +13,14 @@
 </head>
 <body>
 	<div class="indexPageContainer">
-		<h1 id="typed-index"></h1>
-		<div id="appearaftertype">
-			<span>Everything you will submit will be private and can be only accessed by link.</span>
-			
-			<form action="/subm" method="POST">
-				<textarea name="text" class="appear everyInput" rows="16" cols="64" placeholder="Lorem ipsum, blah blah blah...." required></textarea>
-				<input name="pswd" type="password" placeholder="Password (for edit)" class="everyInput" required>
-				<input type="submit" class="everyInput">
-				<div class="g-recaptcha" data-sitekey=<%= captcha %>></div>
-			</form>
-		</div>
+		<h1>Edit document</h1>
+		<form action="/submedit" method="POST">
+			<input name="__id" value=<%= id %> type="hidden">
+			<textarea name="new_content" class="appear everyInput" rows="16" cols="64" placeholder="Lorem ipsum, blah blah blah...." required><%= text %></textarea>
+			<input name="pswd" type="password" placeholder="Enter password" class="everyInput" required>
+			<input type="submit" class="everyInput">
+			<div class="g-recaptcha" data-sitekey="<%= captcha %>"></div>
+		</form>
 	</div>
 
 	<script src="/jquery/dist/jquery.min.js"></script>

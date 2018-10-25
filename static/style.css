@@ -6,14 +6,21 @@ h1 {
 	font-weight: normal;
 }
 
-.indexPageContainer {
-	text-align: center;
+.indexPageContainer, .pageContainer {
+	
 	margin: 32px auto;
 	max-width: 32rem;
 }
 
-.indexPageContainer h1 {
+.indexPageContainer {
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Slab', serif;
+}
+
+.indexPageContainer h1 {
 	font-size: 250%;
 	text-align: center;
 }
@@ -60,10 +67,25 @@ h1 {
 	max-width: 75%;
 }
 
+code {
+	padding: 1px;
+	background: #ededed;
+	border-radius: 2px;
+	font-family: 'Roboto Mono', monospace;
+}
+
 .typed-cursor {
 	display: none;
 }
 
 #appearaftertype {
 	opacity: 0;
+}
+
+.g-recaptcha {
+	display: inline;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	margin-top: 84px;
 }
