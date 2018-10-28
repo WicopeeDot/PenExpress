@@ -7,12 +7,7 @@ env:
   global:
     - MONGODB_VERSION=2.6.10
 before_install:
-  - wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-$MONGODB_VERSION.tgz
-  - tar xfz mongodb-linux-x86_64-$MONGODB_VERSION.tgz
-  - export PATH=`pwd`/mongodb-linux-x86_64-$MONGODB_VERSION/bin:$PATH
-  - mkdir -p data/db
-  - mongod --dbpath=data/db &
-  - sleep 3
+  - mongo admin --eval 'db.createUser({user:"admin",pwd:"admin",roles:["readWrite"]});'
 node_js:
   - 10
   - 9
