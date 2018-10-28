@@ -1,3 +1,4 @@
+process.stdin.resume();
 (async function() {
   try {
     let fs = require('fs')
