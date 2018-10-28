@@ -1,4 +1,5 @@
 # PenExpress (WIP)
+(https://api.travis-ci.org/WicopeeDot/PenExpress.svg?branch=master)[a]
 PenExpress - anonymous blogging engine.
 All pages are private and can be accessed via links.
 
